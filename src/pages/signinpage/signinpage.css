@@ -30,7 +30,7 @@ nav{
 .signup-modal{
     position: relative;    
     width: min(500px, 90%);
-    padding: 50px;
+    padding: 50px 10px;
     background: rgba(0, 0, 0, 0.5);
     z-index: 2;
 }
@@ -127,5 +127,8 @@ form .has-value{
     border-radius: inherit;
     transition: width 0.3s ease;
 }
-/* background: var(--backgroundColor, #e0e0e0) !important;     */
-    /* width: calc(1% * var(--strenghtIndicator, 0));     */
+@media screen  and (min-width:40em){
+    .signup-modal{
+        padding: 50px;
+    }
+}
