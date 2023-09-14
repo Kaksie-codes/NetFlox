@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Homepage from './pages/homepage/Homepage'
-import Signuppage from './pages/signuppage/Signuppage'
 import Moviepage from './pages/moviepage/Moviepage'
 import Profilepage from './pages/profilepage/Profilepage'
 import Signinpage from './pages/signinpage/Signinpage'
+import Signuppage from './pages/signuppage/Signuppage'
 import { auth } from './firebase'
 import { login, logout } from './features/userSlice'
 import { useSelector, useDispatch } from 'react-redux'
@@ -42,9 +42,9 @@ function App() {
       <Routes>
         {!user ? (
           <>
-            <Route index Component={Homepage}/>
-            <Route path='signup' Component={Signuppage}/>
+            <Route index Component={Homepage}/>            
             <Route path='signin' Component={Signinpage}/>
+            <Route path='signup' Component={Signuppage}/>
           </>
         ) : (
           <>

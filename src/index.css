@@ -71,6 +71,9 @@ body{
   width: 90%;    
   margin-inline: auto;  
 }
+.logo{
+  cursor: pointer;
+}
 @media screen  and (min-width: 40em){
   .container__small{
       width: 70%;
@@ -82,6 +85,7 @@ body{
 .text-center{
   text-align: center;
 }
+
 .logo svg{
   fill: var(--netflix-primary-color);
   height: 30px;
